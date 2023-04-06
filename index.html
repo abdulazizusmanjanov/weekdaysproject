@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Week days</title>
+</head>
+<body>
+    <section>
+
+        <!--❗ container started -->
+        <div class="container">
+
+            <!--❗ header started -->
+            <header>
+                <div class="buttons">   
+                    <button class="arrow"><i class="fa-solid fa-arrow-left"></i><span><button class="arrow-right"><i class="fa-solid fa-arrow-right"></i></button></span></button>
+                    <button class="week-btn">This week</button>
+                    <button class="show-btn bold">Show all services <span><i class="fa-solid fa-caret-down"></i></span></button>
+                    <span class="calendar"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                      </svg>
+                      </span>
+                </div>
+                <h1>April 2023</h1>
+            </header>
+            <!--❗ header ended -->
+
+            <!--❗ table started -->
+            <table>
+
+                <thead>
+                    <tr>
+                        <th class="experts left">Experts <button class="expand-btn">Expand all <span><i class="fa-solid fa-chevron-right"></i></span></button></th>
+                        <th><p>Monday <br> <span>7</span></p></th>
+                        <th class="active-th"><p>Tuesday <br> <span>8</span></p></th>
+                        <th><p>Wednesday <br> <span>9</span></p></th>
+                        <th><p>Thursday <br> <span>10</span></p></th>
+                        <th><p>Friday <br> <span>11</span></p></th>
+                        <th><p>Saturday <br> <span>12</span></p></th>
+                        <th class="right"><p>Sunday <br> <span>13</span></p></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!--❗ person-1 table row started  -->
+                    <tr>
+                        <td class="person-td left person-td-1">
+                            <img src="imgs/img-1.jpg" alt="person" class="imgs">
+                            <div class="person-info">
+                                <p class="person-name">Dianna Gurtskaya</p>
+                                <p class="time-date">8:00 AM -7:00 PM</p>
+                                <p class="info">Oil body treatments</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </td>
+
+                        <td class="slots-1 person-1">
+                            1 slots
+                            <div class="slots-time-1 bg-info">
+                                <p class="bold">Oil body treatments</p>
+                                <p>07:00 - 07:45</p>
+                            </div>
+                        </td>
+
+                        <td class="slots-12 person-1">
+                            12 slots
+                            <div class="slots-time-12">
+                                <p class="bg-info">07:00 - 07:45</p>
+                                <p class="bg-info">13:00 - 13:45</p>
+                                <p class="bg-danger">08:00 - 08:45</p>
+                                <p class="bg-danger">14:00 - 14:45</p>
+                                <p class="bg-info">09:00 - 09:45</p>
+                                <p class="bg-info">15:00 - 15:45</p>
+                                <p class="bg-info">10:00 - 10:45</p>
+                                <p class="bg-info">16:00 - 16:45</p>
+                                <p class="bg-danger">11:00 - 11:45</p>
+                                <p class="bg-danger">17:00 - 17:45</p>
+                                <p class="bg-danger">12:00 - 12:45</p>
+                                <p class="bg-info">18:00 - 18:45</p>
+                            </div>
+                            <span class="bold">+ 6 slots <i class="fa-solid fa-chevron-up"></i></span>
+                        </td>
+
+                        <td class="slots-8 person-1">
+                            8 slots
+                            <div class="slots-time-8">
+                                <p class="bg-info">07:00 - 07:45</p>
+                                <p class="bg-info">11:00 - 11:45</p>
+                                <p class="bg-info">08:00 - 08:45</p>
+                                <p class="bg-info">12:00 - 12:45</p>
+                                <p class="bg-info">09:00 - 09:45</p>
+                                <p class="bg-info">13:00 - 13:45</p>
+                                <p class="bg-info">10:00 - 10:45</p>
+                                <p class="bg-info">14:00 - 14:45</p>
+                            </div>
+                            <span class="bold">+ 2 slots <i class="fa-solid fa-chevron-up"></i></span>
+                        </td>
+
+                        <td class="disabled person-1"><div class="person-1-div">Not available</div></td>
+
+                        <td class="slots-8 person-1">
+                            8 slots
+                            <div class="slots-time-8">
+                                <p class="bg-info">07:00 - 07:45</p>
+                                <p class="bg-info">11:00 - 11:45</p>
+                                <p class="bg-info">08:00 - 08:45</p>
+                                <p class="bg-info">12:00 - 12:45</p>
+                                <p class="bg-danger">9:00 - 9:45</p>
+                                <p class="bg-danger">13:00 - 13:45</p>
+                                <p class="bg-info">10:00 - 10:45</p>
+                                <p class="bg-danger">14:00 - 14:45</p>
+                            </div>
+                            <span class="bold">+ 2 slots <i class="fa-solid fa-chevron-up"></i></span>
+                        </td>
+
+                        <td class="slots-6 person-1">
+                            6 slots
+                            <div class="slots-time-6">
+                                <p class="bg-info">07:00 - 07:45</p>
+                                <p class="bg-info">10:00 - 10:45</p>
+                                <p class="bg-danger">08:00 - 08:45</p>
+                                <p class="bg-danger">11:00 - 11:45</p>
+                                <p class="bg-danger">09:00 - 09:45</p>
+                                <p class="bg-danger">12:00 - 12:45</p>
+                            </div>
+                        </td>
+
+                        <td class="slots-2 person-1 right">
+                            2 slots
+                            <div class="slots-time-2">
+                                <p class="bg-info">07:00 - 07:45</p>
+                                <p class="bg-info">10:00 - 10:45</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--❗ person-1 table row ended  -->
+
+                    <!--❗ person-2 table row started  -->
+                    <tr>
+                        <td class="person-td left">
+                            <img src="imgs/img-2.jpg" alt="person" class="imgs">
+                            <div class="person-info">
+                                <p class="person-name">Alexandra Mishkina</p>
+                                <p class="time-date">8:00 AM -7:00 PM</p>
+                                <p class="info">Foot and foot care</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </td>
+
+                        <td class="slots-12 person-2">
+                            12 slots
+                            <div class="slots-time-12">
+                                <p class="bg-info">07:00 - 07:45</p>
+                                <p class="bg-info">10:00 - 10:45</p>
+                                <p class="bg-danger">08:00 - 08:45</p>
+                                <p class="bg-info">11:00 - 11:45</p>
+                                <p class="bg-info">09:00 - 09:45</p>
+                                <p class="bg-danger">12:00 - 12:45</p>
+                            </div>
+                            <span class="bold">+ 6 slots <i class="fa-solid fa-chevron-down"></i></span>
+                        </td>
+
+                        <td class="slots-8 person-2">
+                            8 slots
+                            <div class="slots-time-8">
+                                <p class="bg-info">07:00 - 07:45</p>
+                                <p class="bg-info">10:00 - 10:45</p>
+                                <p class="bg-info">08:00 - 08:45</p>
+                                <p class="bg-info">11:00 - 11:45</p>
+                                <p class="bg-info">09:00 - 09:45</p>
+                                <p class="bg-info">12:00 - 12:45</p>
+                            </div>
+                            <span class="bold">+ 2 slots <i class="fa-solid fa-chevron-down"></i></span>
+                        </td>
+
+                        <td class="disabled person-2"><div>Sick</div></td>
+                        
+                        <td class="disabled person-2"><div>Sick</div></td>
+
+                        <td class="slots-2 person-2">
+                             2 slots
+                            <div class="slots-time-2">
+                                <p class="bg-info">07:00 - 07:45</p>
+                                <p class="bg-info">10:00 - 10:45</p>
+                            </div>
+                        </td>
+
+                        <td class="slots-8 person-2">
+                             8 slots
+                             <div class="slots-time-8">
+                                <p class="bg-info">07:00 - 07:45</p>
+                                <p class="bg-info">10:00 - 10:45</p>
+                                <p class="bg-info">08:00 - 08:45</p>
+                                <p class="bg-info">11:00 - 11:45</p>
+                                <p class="bg-info">09:00 - 09:45</p>
+                                <p class="bg-danger">12:00 - 12:45</p>
+                             </div>
+                             <span class="bold">+ 2 slots <i class="fa-solid fa-chevron-down"></i></span>
+                        </td>
+
+                        <td class="disabled person-2 right"><div>Weekend</div></td>
+                    </tr>
+                    <!--❗ person-2 table row ended  -->
+
+                    <!--❗ person-3 table row started  -->
+                    <tr>
+                        <td class="person-td left">
+                            <img src="imgs/img-3.jpg" alt="person" class="imgs">
+                            <div class="person-info">
+                                <p class="person-name">Anna Romanova</p>
+                                <p class="time-date">8:00 AM -7:00 PM</p>
+                                <p class="info">Hot sauna with beer</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </td>
+
+                        <td class="slots-2 person-3">
+                            2 slots
+                            <div class="slots-time-2">
+                                <p class="bg-pink">21:00 - 22:45</p>
+                                <p class="bg-pink">23:00 - 01:45</p>
+                            </div>
+                        </td>
+
+                        <td class="slots-1 person-3">
+                            1 slots
+                            <div class="slots-time-1 bg-pink">
+                                <p>Hot sauna with beer</p>
+                                <p>21:00 - 22:45</p>
+                            </div>
+                        </td>
+
+                        <td class="slots-6 person-3">
+                            6 slots
+                            <div class="slots-time-6">
+                                <p class="bg-pink">07:00 - 07:45</p>
+                                <p class="bg-pink">10:00 - 10:45</p>
+                                <p class="bg-pink">08:00 - 08:45</p>
+                                <p class="bg-pink">11:00 - 11:45</p>
+                                <p class="bg-pink">09:00 - 09:45</p>
+                                <p class="bg-pink">12:00 - 12:45</p>
+                            </div>
+                        </td>
+
+                        <td class="disabled person-3"><div>Sanitary day</div></td>
+
+                        <td class="slots-2 person-3">
+                            2 slots
+                            <div class="slots-time-2">
+                                <p class="bg-danger">21:00 - 22:45</p>
+                                <p class="bg-danger">23:00 - 01:45</p>
+                            </div>
+                        </td>
+
+                        <td class="slots-2 person-3">
+                            2 slots
+                            <div class="slots-time-2">
+                                <p class="bg-pink">21:00 - 22:45</p>
+                                <p class="bg-danger">23:00 - 01:45</p>
+                            </div>
+                        </td>
+
+                        <td class="slots-1 person-3 right">
+                            1 slots
+                            <div class="slots-time-1 bg-pink">
+                                <p>Hot sauna with beer</p>
+                                <p>21:00 - 22:45</p>
+                            </div>  
+                        </td>
+                    </tr>
+                    <!--❗ person-3 table row ended  -->
+
+                    <!--❗ person-4 table row started  -->
+                    <tr>
+                        <td class="person-td left bottom">
+                            <img src="imgs/img-2.jpg" alt="person" class="imgs">
+                            <div class="person-info">
+                                <p class="person-name">Alexandra Mishkina</p>
+                                <p class="time-date">8:00 AM -7:00 PM</p>
+                                <p class="info">Relaxing Yoga</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </td>
+
+                        <td class="slots-1 person-4 bottom">
+                            1 slots
+                            <div class="slots-time-1 bg-success">
+                                <p>Oil body treatments</p>
+                                <p>07:00 - 07:45</p>
+                            </div>
+                        </td>
+
+                        <td class="slots-12 person-4 bottom">
+                            12 slots
+                            <div class="slots-time-12">
+                                <p class="bg-success">07:00 - 07:45</p>
+                                <p class="bg-success">10:00 - 10:45</p>
+                                <p class="bg-success">08:00 - 08:45</p>
+                                <p class="bg-success">11:00 - 11:45</p>
+                                <p class="bg-success">09:00 - 09:45</p>
+                                <p class="bg-danger">12:00 - 12:45</p>
+                            </div>
+                            <span class="bold">+ 6 slots <i class="fa-solid fa-chevron-down"></i></span>
+                        </td>
+
+                        <td class="slots-8 person-4 bottom">
+                            8 slots
+                            <div class="slots-time-8">
+                                <p class="bg-success">07:00 - 07:45</p>
+                                <p class="bg-success">10:00 - 10:45</p>
+                                <p class="bg-success">08:00 - 08:45</p>
+                                <p class="bg-success">11:00 - 11:45</p>
+                                <p class="bg-success">09:00 - 09:45</p>
+                                <p class="bg-success">12:00 - 12:45</p>
+                            </div>
+                            <span class="bold">+ 2 slots <i class="fa-solid fa-chevron-down"></i></span>
+                        </td>
+
+                        <td class="slots-8 person-4 bottom">
+                            8 slots
+                            <div class="slots-time-8">
+                                <p class="bg-success">07:00 - 07:45</p>
+                                <p class="bg-success">10:00 - 10:45</p>
+                                <p class="bg-success">08:00 - 08:45</p>
+                                <p class="bg-success">11:00 - 11:45</p>
+                                <p class="bg-success">09:00 - 09:45</p>
+                                <p class="bg-success">12:00 - 12:45</p>
+                            </div>
+                            <span class="bold">+ 2 slots <i class="fa-solid fa-chevron-down"></i></span>
+                        </td>
+
+                        <td class="slots-6 person-4 bottom">
+                            6 slots
+                            <div class="slots-time-6">
+                                <p class="bg-success">07:00 - 07:45</p>
+                                <p class="bg-success">10:00 - 10:45</p>
+                                <p class="bg-success">08:00 - 08:45</p>
+                                <p class="bg-success">11:00 - 11:45</p>
+                                <p class="bg-success">09:00 - 09:45</p>
+                                <p class="bg-success">12:00 - 12:45</p>
+                            </div>
+                        </td>
+
+                        <td class="slots-6 person-4 bottom">
+                            6 slots
+                            <div class="slots-time-6">
+                                <p class="bg-success">07:00 - 07:45</p>
+                                <p class="bg-success">10:00 - 10:45</p>
+                                <p class="bg-success">08:00 - 08:45</p>
+                                <p class="bg-success">11:00 - 11:45</p>
+                                <p class="bg-success">09:00 - 09:45</p>
+                                <p class="bg-success">12:00 - 12:45</p>
+                            </div>
+                        </td>
+
+                        <td class="slots-2 person-4 right bottom">
+                            2 slots
+                            <div class="slots-time-2">
+                                <p class="bg-success">07:00 - 07:45</p>
+                                <p class="bg-success">10:00 - 10:45</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--❗ person-4 table row ended  -->
+                    <tr>
+                        <td class="border left-border"></td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                        <td class="border right-border"></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <!--❗ table ended -->
+
+        </div>
+        <!--❗ container ended -->
+
+    </section>
+</body>
+</html>
